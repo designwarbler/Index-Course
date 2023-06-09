@@ -1,0 +1,175 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden Example 1 </title>
+    <!-- We are going to be adding new fonts here, they have to be inside the head tag -->
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+
+    <style>
+
+.audio-player {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+}
+.audio-player audio {
+  width: 100%;
+}
+
+.audio-player audio::-webkit-media-controls-panel {
+  background-color: red;
+  border-radius: 5px;
+}
+
+.audio-player audio::-webkit-media-controls-play-button {
+  background-color: blueviolet;
+}
+
+.audio-player audio::-webkit-media-controls-volume-slider {
+  width: 80px;
+
+h1{
+    font-family: 'Comfortaa', cursive;
+    font-size: 5em;
+
+    margin: 40px;
+
+    /* padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 100px;
+    padding-left: 80px; */
+
+    padding: 30px 30px 100px 80px;
+
+    background-color: green;
+}
+       body
+       {
+        /* margin: 0;
+            padding: 0; */
+            background-color: black;
+       }
+
+.flow {
+    /* We will dive deeper into different displays for layout next classs */
+
+ 
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            color: aliceblue;
+        }
+
+        /* We are going to use our custom fonts here, when they are in the header they are just permitting us to use them as a property */
+
+
+
+
+/* Here we are going to learn how to use position to change the place where an element is "supposed to land" */
+
+P{
+    z-index: 1;
+
+}
+#move {
+    position: relative;
+    top: -100; 
+    right: 0;
+    bottom: 300;
+    left: 200;
+
+    z-index: -1
+}
+
+/* On the image overllap div we are going to learnn how to use display block and opacity to hide and show a given elemnent */
+
+/* We are also gonna play a bt with some effects */
+
+#imgOverlap {
+    /* margin: auto;
+    text-align: center; */
+}
+
+#imgOverlap img {
+    background-color: rgb(34, 127, 208);
+    /* width: 25%;
+
+    border: 10px solid blue;
+    margin: 2%; */
+
+    
+}
+
+#imgOverlap img:hover {
+    background-color: hotpink;
+    width: 30%
+
+    opacity: 30%;
+    /* display: none; (this will hide and show elements on the page */
+}
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <form>
+
+        <label for="fname">How are your feeling today?</label><br>
+        <input id="text" type="text" id="feeling" name="feeling"><br>
+      </form>
+
+      
+    <section class="flow">
+
+        <h1>The Code's Silent Realm: A Short Poem
+        </h1>
+        
+
+        <p>Amidst the code's realm where keystrokes abound,
+            The mystic environment glows around.
+            With silent taps, the ones and zeros align,
+            As lines of code become art, divine.</p>
+
+            <p>The coder weaves their craft within this sphere,
+                With rhythm and flow that few else can hear.
+                In this enchanted land where code reigns high,
+                Imagination and logic both apply.</p>
+
+<div id="img1">
+                <img id="move" src="images/computersNature.gif" alt="gif animation about computers">
+        
+            </div>
+
+            <div id="imgOverlap">
+                <img id="one" src="images/Miroodles - Mono Comp (1).png" alt="series of one item illustrations">
+                <img id="two" src="images/Miroodles - Mono Comp (2).png" alt="series of one item illustrationsn">
+                <img src="images/Miroodles - Mono Comp (3).png" alt="series of one item illustrationsn">
+
+
+            </div>
+       
+<audio src="https://upload.wikimedia.org/wikipedia/commons/4/45/Sound_of_a_unidentified_bird_in_Bangkok%2C_Thailand.ogg" controls autoplay></audio>
+     
+<video src="image/Powers of Ten™ (1977).mp4" contents>
+
+    </video>
+    <iframe src="https://player.vimeo.com/video/337823655?h=110c17d2d3&color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <p><a href="https://vimeo.com/337823655">THE SWIMMER A SHORT FILM ABOUT THE POWER OF RITUAL</a> from <a href="https://vimeo.com/blaisehayward">Blaise Hayward</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+    </section>
+
+    
+
+</body>
+
+</html>
